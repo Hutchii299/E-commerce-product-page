@@ -10,7 +10,7 @@ class InformationComponent {
     _changeQty(e) {
         const btnClicked = e.target;
         if (btnClicked.tagName !== 'BUTTON') return
-        const qtyChange = btnClicked.ariaLabel === 'plus' ? 1 : -1;
+        const qtyChange = btnClicked.dataset.type === 'plus' ? 1 : -1;
         return this._changeQtyField(qtyChange);
     }
 
@@ -23,7 +23,6 @@ class InformationComponent {
 
     _addHandlerQtyChange() {
         this._parentElement.querySelector('.controls__items').addEventListener('click', (e) => {
-            console.log('hi');
             this._qty = this._changeQty(e);
         });
     }

@@ -12,7 +12,7 @@
       href="./src/images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="./src/styles/main.scss" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,11 +60,30 @@
 
     <main class="container">
       <div class="container__left">
-        <img
-          class="images__main"
-          src="./src/images/image-product-1.jpg"
-          alt="product"
-        />
+        <div class="images__main-container">
+          <button
+            class="btn btn-left left-pad"
+            aria-label="button-left"
+            data-type="button-left"
+            type="button"
+          >
+            <span class="chevron"></span>
+          </button>
+          <button
+            class="btn btn-right right-pad"
+            aria-label="button-right"
+            data-type="button-right"
+            type="button"
+          >
+            <span class="chevron"></span>
+          </button>
+          <img
+            class="images__main"
+            src="./src/images/image-product-1.jpg"
+            alt="product"
+          />
+        </div>
+
         <div class="images__thumbnail">
           <figure class="images__thumbnail-fig add-border">
             <figcaption class="images__thumbnail-caption"></figcaption>
@@ -129,11 +148,21 @@
 
         <div class="controls">
           <div class="controls__items">
-            <button class="btn controls__btns" aria-label="minus" type="button">
+            <button
+              class="btn controls__btns"
+              aria-label="minus"
+              data-type="minus"
+              type="button"
+            >
               -
             </button>
             <h2 class="heading-h2 dark-color">0</h2>
-            <button class="btn controls__btns" aria-label="plus" type="button">
+            <button
+              class="btn controls__btns"
+              aria-label="plus"
+              data-type="plus"
+              type="button"
+            >
               +
             </button>
           </div>
@@ -173,12 +202,18 @@
               src="./src/images/image-product-1.jpg"
               alt="product"
             />
-            <button class="btn btn-left" aria-label="button-left" type="button">
+            <button
+              class="btn btn-left"
+              aria-label="button-left"
+              data-type="button-left"
+              type="button"
+            >
               <span class="chevron"></span>
             </button>
             <button
               class="btn btn-right"
               aria-label="button-right"
+              data-type="button-right"
               type="button"
             >
               <span class="chevron"></span>

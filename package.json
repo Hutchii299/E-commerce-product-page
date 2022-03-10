@@ -4,7 +4,8 @@
   "description": "Frontend mentor ecomerce page",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "build": "parcel build index.html --dist-dir ./dist",
+    "sass": "node-sass src/styles/main.scss > src/styles/main.css"
   },
   "author": "Rhys Hutchinson (Github: Hutchii299)",
   "license": "ISC",
@@ -14,6 +15,7 @@
   },
   "dependencies": {
     "core-js": "^3.21.1",
-    "regenerator-runtime": "^0.13.9"
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.49.9"
   }
 }

@@ -10,6 +10,10 @@
     align-items: center;
     justify-content: center;
     transition: all 2s;
+
+    @include respond(tablet) {
+      display: none;
+    }
   }
 
   &__container {

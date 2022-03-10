@@ -1,12 +1,34 @@
+.images__main-container {
+  position: relative;
+}
+
+.left-pad {
+  left: 2rem !important;
+  display: none;
+
+  @include respond(tablet) {
+    display: inline-block;
+  }
+}
+
+.right-pad {
+  right: 2rem !important;
+  display: none;
+  @include respond(tablet) {
+    display: inline-block;
+  }
+}
+
 .images__main {
   width: 100%;
   border-radius: 2rem;
   cursor: pointer;
 
   @include respond(tablet) {
-    height: 40vh;
+    height: 34vh;
     border-radius: 0;
     object-fit: cover;
+    cursor: auto;
   }
 }
 

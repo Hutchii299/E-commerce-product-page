@@ -1,5 +1,5 @@
-import imgThumbnail from "url:../../images/image-product-1-thumbnail.jpg";
-import binImg from "url:../../images/icon-delete.svg";
+// import imgThumbnail from "../../images/image-product-1-thumbnail.jpg";
+// import binImg from "../../images/icon-delete.svg"
 
 class CartComponent {
     _parentElement = document.querySelector('.header');
@@ -56,7 +56,7 @@ class CartComponent {
                 <div class="cart__items">
                 <img
                     class="cart__img"
-                    src="${imgThumbnail}"
+                    src="./src/images/image-product-1-thumbnail.jpg"
                     alt="item-in-cart"
                 />
                 <div class="cart__details">
@@ -68,7 +68,7 @@ class CartComponent {
                 <button class="btn" aria-label="remove-from-cart" type="button">
                     <img
                     class="cart__bin"
-                    src="${binImg}"
+                    src="./src/images/icon-delete.svg"
                     alt="bin-icon"
                     />
                 </button>

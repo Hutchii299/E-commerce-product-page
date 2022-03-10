@@ -11,9 +11,10 @@
 .heading-h1 {
   color: $color-dark-blue;
   text-transform: capitalize;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
   line-height: 1;
+  letter-spacing: 1px;
 
   @include respond(tablet) {
     font-size: 2.5rem;

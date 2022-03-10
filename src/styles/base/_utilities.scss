@@ -47,13 +47,12 @@
 }
 
 .chevron {
-  $border-size-chevron: 0.22rem;
   border-color: black;
   border-style: solid;
-  border-width: $border-size-chevron $border-size-chevron 0 0;
+  border-width: 0.22rem 0.22rem 0 0;
   display: inline-block;
-  height: calc($border-size-chevron * 5);
-  width: calc($border-size-chevron * 5);
+  height: calc(0.22rem * 5);
+  width: calc(0.22rem * 5);
   transform: rotate(-135deg);
   transition: all 0.4s;
 }

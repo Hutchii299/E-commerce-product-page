@@ -2,6 +2,7 @@ import ImgSelectorComponent from "./imgSelectorView.js";
 
 class ImageContainer extends ImgSelectorComponent {
     _parentElement = document.querySelector('.container__left');
+    _parentName = 'images__main-container'
     _thumbnails = this._parentElement.querySelector('.images__thumbnail');
     _figures = Array.from(this._parentElement.querySelectorAll('.images__thumbnail-fig'));
     _captions = Array.from(this._parentElement.querySelectorAll('.images__thumbnail-caption'));
@@ -10,6 +11,7 @@ class ImageContainer extends ImgSelectorComponent {
     constructor() {
         super();
         this._handleThumbnailClick();
+        this._toggleThumbnailFromArrowButtons();
         this._onResize();
     }
 
