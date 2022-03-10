@@ -1,0 +1,45 @@
+.images__main {
+  width: 100%;
+  border-radius: 2rem;
+  cursor: pointer;
+
+  @include respond(tablet) {
+    height: 40vh;
+    border-radius: 0;
+    object-fit: cover;
+  }
+}
+
+.images__thumbnail {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 3rem;
+
+  &-fig {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  &-caption {
+    // opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: $color-white, $alpha: 0.5);
+    transition: opacity 0.4s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &-img {
+    width: 100%;
+    border-radius: inherit;
+  }
+}

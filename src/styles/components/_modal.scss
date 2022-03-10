@@ -1,0 +1,74 @@
+.modal {
+  &__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: $color-lightbox-background, $alpha: 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s;
+  }
+
+  &__container {
+    position: relative;
+    max-width: 60vh;
+    gap: 3.5rem 3rem;
+  }
+
+  &__close {
+    position: absolute;
+    top: -3.5rem;
+    right: 0;
+
+    &:hover .modal__close-img {
+      fill: $color-primary;
+    }
+  }
+
+  &__close-img {
+    fill: $color-grey-blue-light;
+    transition: all 0.4s;
+  }
+
+  &__main-image-container {
+    display: flex;
+    position: relative;
+  }
+
+  &__thumbnails {
+    padding: 0 3rem;
+  }
+}
+
+.btn-left {
+  position: absolute;
+  top: 50%;
+  left: -2rem;
+  transform: translateY(-50%);
+  height: 4.5rem;
+  width: 4.5rem;
+  background-color: $color-white;
+  border-radius: 50%;
+
+  // & .chevron {
+  //   transform: translateX(-0.2rem) rotate(40deg);
+  // }
+}
+
+.btn-right {
+  position: absolute;
+  top: 50%;
+  right: -2rem;
+  transform: translateY(-50%);
+  height: 4.5rem;
+  width: 4.5rem;
+  background-color: $color-white;
+  border-radius: 50%;
+
+  & .chevron {
+    transform: translateX(-0.2rem) rotate(40deg);
+  }
+}

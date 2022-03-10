@@ -1,0 +1,116 @@
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-main {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 7rem;
+  border-radius: 1rem;
+  background-color: $color-primary;
+  color: $color-white;
+  // width: 100%;
+  @include respond(tablet) {
+    padding: 1.5rem 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.btn-main img {
+  margin-right: 2rem;
+  height: 1.6rem;
+  text-align: center;
+}
+
+.add-to-cart {
+  position: relative;
+
+  &::after {
+    content: '';
+    background-color: $color-white;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.4s;
+  }
+}
+
+.add-to-cart:hover::after {
+  opacity: 0.5;
+}
+
+.price {
+  &__container {
+    display: flex;
+    align-items: center;
+
+    @include respond(tablet) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__discount {
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+  }
+}
+
+.controls {
+  display: flex;
+
+  @include respond(tablet) {
+    align-self: stretch;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 12rem;
+    background-color: $color-grey-blue-light;
+    align-items: center;
+    justify-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-right: 2rem;
+
+    @include respond(tablet) {
+      width: 100%;
+      padding: 1.1rem 0;
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__btns {
+    background-color: inherit;
+    color: $color-primary;
+    font-weight: 400;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.cart-form {
+  width: 100%;
+}
+
+.prices {
+  width: 100%;
+  @include respond(tablet) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+}

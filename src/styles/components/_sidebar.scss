@@ -1,0 +1,28 @@
+.sidebar {
+  background-color: white;
+  width: 20rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 3rem;
+  transform: translateX(-100%);
+  translate: all 0.4s;
+
+  &__close {
+    margin-bottom: 4rem;
+
+    &-img {
+      fill: $color-grey-blue-dark;
+      transition: all 0.4s;
+    }
+
+    &:hover .sidebar__close-img {
+      fill: $color-primary;
+    }
+  }
+}
+
+.show-sidebar {
+  transform: translateX(0);
+}

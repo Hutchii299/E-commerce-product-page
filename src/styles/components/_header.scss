@@ -1,0 +1,124 @@
+.header {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem 3rem;
+  border-bottom: 1px solid $color-grey-blue-light;
+
+  @include respond(tablet) {
+    padding: 1rem 2rem;
+  }
+
+  &__icon {
+    display: none;
+    opacity: 0;
+    margin-right: 2rem;
+    transform: translateY(0.3rem);
+
+    @include respond(tablet) {
+      display: inline-block;
+      opacity: 1;
+    }
+  }
+
+  &__logo {
+    margin-right: 5rem;
+    // transform: translateY(-0.2rem);
+    @include respond(tablet) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__nav {
+    :not(:last-child) {
+      margin-right: 3rem;
+
+      @include respond(tablet) {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &-li {
+      list-style: none;
+      display: inline-block;
+      font-family: inherit;
+
+      @include respond(tablet) {
+        display: block;
+      }
+    }
+  }
+  &__nav a {
+    font-family: inherit;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $color-grey-blue;
+    font-size: 1.4rem;
+    padding-bottom: 4.3rem;
+    border-bottom: 3px solid transparent;
+    transition: all 0.4s;
+
+    @include respond(tablet) {
+      color: $color-dark-blue;
+      font-weight: 700;
+      font-size: 1.5rem;
+      padding-bottom: 0;
+    }
+
+    &:hover {
+      border-bottom: 3px solid $color-primary;
+      color: $color-grey-blue-dark;
+
+      @include respond(tablet) {
+        color: $color-dark-blue;
+      }
+    }
+  }
+
+  &__user-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  &__cart {
+    position: relative;
+    margin-right: 4rem;
+    cursor: pointer;
+
+    @include respond(tablet) {
+      margin-right: 1rem;
+    }
+
+    // &-img {
+    // }
+
+    &-item {
+      position: absolute;
+      top: -0.5rem;
+      right: -0.5rem;
+      color: $color-white;
+      background-color: $color-primary;
+      line-height: 1;
+      padding: 0.1rem 0.6rem;
+      border-radius: 5rem;
+    }
+  }
+
+  &__avatar {
+    height: 4.5rem;
+    border-radius: 50%;
+    outline: 2px solid transparent;
+    transition: all 0.4s;
+    cursor: pointer;
+
+    @include respond(tablet) {
+      height: 2.5rem;
+    }
+
+    &:hover {
+      outline: 2px solid $color-primary;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.add-border {
+  outline: 2px solid $color-primary;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.no-display {
+  display: none !important;
+  opacity: 0;
+}
+
+.padding-small {
+  padding: 0.4rem;
+}
+
+.margin-bottom-xsmall {
+  margin-bottom: 1.5rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 2.5rem;
+
+  @include respond(tablet) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.margin-bottom-medium {
+  margin-bottom: 4rem;
+  @include respond(tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.margin-bottom-large {
+  margin-bottom: 6rem;
+
+  @include respond(tablet) {
+    margin-bottom: 2rem;
+  }
+}
+
+.chevron {
+  $border-size-chevron: 0.22rem;
+  border-color: black;
+  border-style: solid;
+  border-width: $border-size-chevron $border-size-chevron 0 0;
+  display: inline-block;
+  height: calc($border-size-chevron * 5);
+  width: calc($border-size-chevron * 5);
+  transform: rotate(-135deg);
+  transition: all 0.4s;
+}
+
+.btn:hover .chevron {
+  border-color: $color-primary;
+}
