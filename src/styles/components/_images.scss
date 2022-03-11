@@ -40,13 +40,13 @@
   &-fig {
     position: relative;
     display: flex;
+    align-items: center;
     overflow: hidden;
     border-radius: 1rem;
     cursor: pointer;
   }
 
   &-caption {
-    // opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -55,6 +55,8 @@
     background-color: rgba($color: $color-white, $alpha: 0.5);
     transition: opacity 0.4s;
 
+    border-radius: 1rem;
+
     &:hover {
       opacity: 1;
     }
@@ -62,6 +64,6 @@
 
   &-img {
     width: 100%;
-    border-radius: inherit;
+    border-radius: 1rem;
   }
 }

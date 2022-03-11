@@ -300,6 +300,7 @@ body {
   .images__thumbnail-fig {
     position: relative;
     display: flex;
+    align-items: center;
     overflow: hidden;
     border-radius: 1rem;
     cursor: pointer; }
@@ -310,12 +311,13 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
-    transition: opacity 0.4s; }
+    transition: opacity 0.4s;
+    border-radius: 1rem; }
     .images__thumbnail-caption:hover {
       opacity: 1; }
   .images__thumbnail-img {
     width: 100%;
-    border-radius: inherit; }
+    border-radius: 1rem; }
 
 .btn {
   border: none;

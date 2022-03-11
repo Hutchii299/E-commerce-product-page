@@ -16,6 +16,6 @@ node_modules
 .DS_Store
 .prettierignore
 .prettierrc
-FEM-resources
+FEM-items
 dist
 .parcel-cache

@@ -14,7 +14,6 @@
   background-color: $color-primary;
   color: $color-white;
   font-size: 1.5rem;
-  // width: 100%;
   @include respond(tablet) {
     padding: 1.5rem 0;
     width: 100%;
@@ -25,7 +24,6 @@
 .btn-main img {
   margin-right: 2rem;
   height: 1.6rem;
-  // text-align: center;
 }
 
 .add-to-cart {
