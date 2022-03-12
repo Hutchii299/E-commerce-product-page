@@ -39,6 +39,9 @@ const controllerRemoveFromCart = function () {
 
     //update cart icon
     cartComponent.updateIcon();
+
+    //make the qty in informationView === 0
+    informationView.resetQTY();
 }
 
 const controllerShowModal = function () {

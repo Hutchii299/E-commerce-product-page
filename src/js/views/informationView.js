@@ -14,6 +14,10 @@ class InformationComponent {
         return this._changeQtyField(qtyChange);
     }
 
+    resetQTY() {
+        this._parentElement.querySelector('.controls__items .heading-h2').innerText = '0';
+    }
+
     _changeQtyField(qtyChange) {
         const qtyLabel = this._parentElement.querySelector('.controls__items .heading-h2');
         const qtyCurrent = +qtyLabel.innerText;
